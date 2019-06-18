@@ -1,0 +1,66 @@
+<templateSet group="user">
+  <template name="fdvval" value="val $name$ = findViewById&lt;$type$&gt;(R.id.$id$)" description="template for using find view and set variable" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="stclk" value="$property$.setOnClickListener($lambda$)" description="set click listener kotlin android" toReformat="false" toShortenFQNames="true">
+    <variable name="property" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="lambda" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="snkbr" value="Snackbar.make($view$, $text$, Snackbar.$duration$).show()" description="Android Snackbar." toReformat="false" toShortenFQNames="true">
+    <variable name="view" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="duration" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="fdv" value="findViewById&lt;$type$&gt;(R.id.$vieId$)." description="Find view and operate directly on it." toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="vieId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="frag" value="import android.os.Bundle&#10;import android.view.LayoutInflater&#10;import android.view.View&#10;import android.view.ViewGroup&#10;import androidx.fragment.app.Fragment&#10;&#10;class $className$ : Fragment() {&#10;&#10;    companion object {&#10;        fun instance(): $className$ {&#10;            return $className$()&#10;        }&#10;    }&#10;    &#10;    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {&#10;        return inflater.inflate(R.layout.$layout$, container, false)    &#10;    }&#10;}" description="Create fragment template" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="valEstr" value=".withValidation { $var$ -&gt;&#10;    if($var$.isEmpty()) resource(R.string.$string_res$)&#10;    else null&#10;}" description="empty string field validator" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string_res" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="valField" value=".withValidation { $var$ -&gt;&#10;    if($condition$) resource(R.string.$string_res$)&#10;    else null&#10;}" description="fieldValdiator" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string_res" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="inptlayout" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;            android:layout_width=&quot;0dp&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&gt;&#10;            &#10;            $editText$&#10;        &#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="Text input layout" toReformat="false" toShortenFQNames="true">
+    <variable name="editText" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="clickLambda" value="private val $propertyName$: (View) -&gt; Unit = { clickedView -&gt;&#10;    &#10;}" description="create lambda for a view click listener" toReformat="false" toShortenFQNames="true">
+    <variable name="propertyName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
