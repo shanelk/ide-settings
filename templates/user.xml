@@ -63,4 +63,22 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="vmfact" value="class $FactoryClass$(val $parameter$): ViewModelProvider.NewInstanceFactory() {&#10;    @Supress(&quot;UNCHECKED_CAST&quot;)&#10;    override fun &lt;T : ViewModel?&gt; create(modelClass: Class&lt;T&gt;): T {&#10;        return $ViewModelClass$($paramter$) as T&#10;    }&#10;}" description="View model factory" toReformat="false" toShortenFQNames="true">
+    <variable name="FactoryClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ViewModelClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="paramter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="vmfrag" value="class $FragmentClass$ : Fragment() {&#10;    &#10;    private lateinit var model: $VMClass$&#10;&#10;    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {&#10;        return inflater.inflate(R.layout.$layoutid$, container, false)&#10;    }&#10;&#10;    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {&#10;        super.onViewCreated(view, savedInstanceState)&#10;        backBarLayout.visibility = View.GONE&#10;        activity?.run { &#10;            model = ViewModelProviders.of(this, $FactoryClass$())&#10;                .get($VMClass$::class.java)&#10;        }&#10;    }&#10;}" description="Fragment with view model setup" toReformat="false" toShortenFQNames="true">
+    <variable name="FragmentClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VMClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layoutid" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FactoryClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
