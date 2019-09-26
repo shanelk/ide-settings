@@ -63,11 +63,11 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="vmfact" value="class $FactoryClass$(val $parameter$): ViewModelProvider.NewInstanceFactory() {&#10;    @Supress(&quot;UNCHECKED_CAST&quot;)&#10;    override fun &lt;T : ViewModel?&gt; create(modelClass: Class&lt;T&gt;): T {&#10;        return $ViewModelClass$($paramter$) as T&#10;    }&#10;}" description="View model factory" toReformat="false" toShortenFQNames="true">
-    <variable name="FactoryClass" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="vmfact" value="class $VMClass$(val $parameter$): ViewModel() {&#10;    &#10;}&#10;&#10;class $FactoryClass$(val $parmater$): NewInstanceFactory {}" description="View model factory" toReformat="false" toShortenFQNames="true">
+    <variable name="VMClass" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ViewModelClass" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="paramter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FactoryClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parmater" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
     </context>
