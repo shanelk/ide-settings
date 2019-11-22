@@ -84,4 +84,19 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="adptr" value="class $VHClass$(itemView: View) : RecyclerView.ViewHolder(itemView) {&#10;    &#10;}&#10;&#10;class $Adapter$ : RecyclerView.Adapter&lt;$VHClass$&gt;() {&#10;   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScanRowViewHolder {&#10;       val view = LayoutInflater.from(parent.context).inflate(R.layout.$layout$, parent, false)&#10;       return ScanRowViewHolder(view)&#10;    }&#10;&#10;    override fun getItemCount(): Int {&#10;        TODO(&quot;not implemented&quot;) //To change body of created functions use File | Settings | File Templates.&#10;    }&#10;&#10;    override fun onBindViewHolder(holder: ScanRowViewHolder, position: Int) {&#10;        TODO(&quot;not implemented&quot;) //To change body of created functions use File | Settings | File Templates.&#10;    }&#10;}" description="Setup a RecyclerView adapter" toReformat="false" toShortenFQNames="true">
+    <variable name="VHClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Adapter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="listdiff" value="class $ClassName$(val oldList: List&lt;$type$&gt;, val newList: List&lt;$type$&gt;) : DiffUtil.Callback() {&#10;    &#10;}" description="Template for adding a DiffUtil to be used with Recycler views." toReformat="false" toShortenFQNames="true">
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
