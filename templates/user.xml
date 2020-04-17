@@ -99,4 +99,10 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="vg" value="class $classname$ : ViewGenerator() {&#10;    override val title: String&#10;        get() = TODO(&quot;not implemented&quot;) //To change initializer of created properties use File | Settings | File Templates.&#10;&#10;    override fun generate(dependency: ViewDependency): View {&#10;        TODO(&quot;not implemented&quot;) //To change body of created functions use File | Settings | File Templates.&#10;    }&#10;}" description="View Generator Template" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
