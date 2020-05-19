@@ -105,4 +105,11 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="bsecvw" value="import android.content.Context&#10;import android.os.Bundle&#10;import com.taxbot.baseui.BaseContainedView&#10;import com.taxbot.baseui.ViewContainer&#10;&#10;class $KLASS$(context: Context, container: ViewContainer, arguments: Bundle?) : BaseContainedView(context, container, arguments) {&#10;    init {&#10;            inflate(R.layout.$layoutRes$, container)&#10;    }&#10;}" description="Base Contained View" toReformat="false" toShortenFQNames="true">
+    <variable name="KLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layoutRes" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
