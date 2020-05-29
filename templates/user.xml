@@ -92,7 +92,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="listdiff" value="class $ClassName$(val oldList: List&lt;$type$&gt;, val newList: List&lt;$type$&gt;) : DiffUtil.Callback() {&#10;    &#10;}" description="Template for adding a DiffUtil to be used with Recycler views." toReformat="false" toShortenFQNames="true">
+  <template name="dffclbk" value="class $ClassName$(val oldList: List&lt;$type$&gt;, val newList: List&lt;$type$&gt;) : DiffUtil.Callback() {&#10;    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {&#10;        val oldItem = oldList[oldItemPosition]&#10;        val newItem = oldList[newItemPosition]&#10;        //Compare old and new item here&#10;    }&#10;&#10;    override fun getOldListSize(): Int {&#10;        return oldList.size&#10;    }&#10;&#10;    override fun getNewListSize(): Int {&#10;        return newList.size&#10;    }&#10;&#10;    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {&#10;        val oldItem = oldList[oldItemPosition]&#10;        val newItem = oldList[newItemPosition]&#10;        //Compare old and new item contents&#10;    }&#10;}" description="Template for adding a DiffUtil to be used with Recycler views." toReformat="false" toShortenFQNames="true">
     <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
