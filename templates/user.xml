@@ -112,4 +112,13 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="khrysvg" value="class $VGClass$(val stack: ObservableStack&lt;ViewGenerator&gt;) : ViewGenerator() {&#10;&#10;    override val title: String&#10;        get() = $title$&#10;&#10;    override fun generate(dependency: ViewDependency): View {&#10;        val xml = $XMLClass$()&#10;        return xml.setup(dependency)&#10;    }&#10;}&#10;&#10;class $XMLClass$ {&#10;    fun setup(dependency: ViewDependency): View {&#10;         val view = LayoutInflater.from(dependency.context).inflate(R.layout.$layout$, null, false)&#10;         return setupView(view)&#10;    }&#10;    &#10;    fun setupView(view: View): View {&#10;        //Initialize your view here&#10;        return view&#10;    }&#10;}" description="View Generator for khrysalis" toReformat="false" toShortenFQNames="true">
+    <variable name="VGClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="XMLClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
