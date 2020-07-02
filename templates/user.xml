@@ -121,4 +121,11 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="txtview" value="&lt;TextView &#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:text=&quot;@string/$string$&quot;&#10;    android:textSize=&quot;$textSize$&quot;/&gt;" description="Template for android text view" toReformat="false" toShortenFQNames="true">
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="textSize" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
