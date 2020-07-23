@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="countryCodeHtml" type="HTML" />
       <mapping ext="webp" type="Image" />
+      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="gramps" type="PLAIN_TEXT" />
       <mapping pattern="base_sixtyfour" type="PLAIN_TEXT" />
