@@ -92,11 +92,40 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="listdiff" value="class $ClassName$(val oldList: List&lt;$type$&gt;, val newList: List&lt;$type$&gt;) : DiffUtil.Callback() {&#10;    &#10;}" description="Template for adding a DiffUtil to be used with Recycler views." toReformat="false" toShortenFQNames="true">
+  <template name="dffclbk" value="class $ClassName$(val oldList: List&lt;$type$&gt;, val newList: List&lt;$type$&gt;) : DiffUtil.Callback() {&#10;    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {&#10;        val oldItem = oldList[oldItemPosition]&#10;        val newItem = newList[newItemPosition]&#10;        //Compare old and new item here&#10;    }&#10;&#10;    override fun getOldListSize(): Int {&#10;        return oldList.size&#10;    }&#10;&#10;    override fun getNewListSize(): Int {&#10;        return newList.size&#10;    }&#10;&#10;    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {&#10;        val oldItem = oldList[oldItemPosition]&#10;        val newItem = newList[newItemPosition]&#10;        //Compare old and new item contents&#10;    }&#10;}" description="Template for adding a DiffUtil to be used with Recycler views." toReformat="false" toShortenFQNames="true">
     <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="vg" value="class $classname$ : ViewGenerator() {&#10;    override val title: String&#10;        get() = TODO(&quot;not implemented&quot;) //To change initializer of created properties use File | Settings | File Templates.&#10;&#10;    override fun generate(dependency: ViewDependency): View {&#10;        TODO(&quot;not implemented&quot;) //To change body of created functions use File | Settings | File Templates.&#10;    }&#10;}" description="View Generator Template" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="bsecvw" value="import android.content.Context&#10;import android.os.Bundle&#10;import com.taxbot.baseui.BaseContainedView&#10;import com.taxbot.baseui.ViewContainer&#10;import com.taxbot.R&#10;&#10;class $KLASS$(context: Context, container: ViewContainer, arguments: Bundle?) : BaseContainedView(context, container, arguments) {&#10;    init {&#10;            inflate(context, R.layout.$layoutRes$, this)&#10;    }&#10;}" description="Base Contained View" toReformat="false" toShortenFQNames="true">
+    <variable name="KLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layoutRes" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="khrysvg" value="class $VGClass$(val stack: ObservableStack&lt;ViewGenerator&gt;) : ViewGenerator() {&#10;&#10;    override val title: String&#10;        get() = $title$&#10;&#10;    override fun generate(dependency: ViewDependency): View {&#10;        val xml = $XMLClass$()&#10;        return xml.setup(dependency)&#10;    }&#10;}&#10;&#10;class $XMLClass$ {&#10;    fun setup(dependency: ViewDependency): View {&#10;         val view = LayoutInflater.from(dependency.context).inflate(R.layout.$layout$, null, false)&#10;         return setupView(view)&#10;    }&#10;    &#10;    fun setupView(view: View): View {&#10;        //Initialize your view here&#10;        return view&#10;    }&#10;}" description="View Generator for khrysalis" toReformat="false" toShortenFQNames="true">
+    <variable name="VGClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="XMLClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="txtview" value="&lt;TextView &#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:text=&quot;@string/$string$&quot;&#10;    android:textSize=&quot;$textSize$&quot;/&gt;" description="Template for android text view" toReformat="false" toShortenFQNames="true">
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="textSize" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
     </context>
   </template>
 </templateSet>
