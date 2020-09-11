@@ -6,6 +6,7 @@
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="gramps" type="PLAIN_TEXT" />
+      <mapping pattern="WORKSPACE" type="PLAIN_TEXT" />
       <mapping pattern="base_sixtyfour" type="PLAIN_TEXT" />
       <mapping pattern="test.json" type="PLAIN_TEXT" />
       <mapping ext="obj" type="PLAIN_TEXT" />
