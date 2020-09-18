@@ -128,4 +128,10 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="parc" value="public $Klass$() {}&#10;&#10;private $Klass$(Parcel source) {&#10;    &#10;}&#10;&#10;public static const Parcelable.Creator&lt;$Klass$&gt; CREATOR = new Parcelable.Creator&lt;$Klass$&gt;() {&#10;    @Override&#10;    public $Klass$ createFromParcel(Parcel source) {&#10;        return new $Klass$(source)&#10;    }&#10;&#10;    @Override&#10;    public %Klass$[] newArray(int size) {&#10;        return new $Klass$[size];&#10;    }&#10;}&#10;&#10;@Override&#10;public int describeContents() {&#10;    return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;    &#10;}" description="Parcelable Template" toReformat="false" toShortenFQNames="true">
+    <variable name="Klass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
