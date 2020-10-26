@@ -134,4 +134,11 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="khrysXmlClass" value="class $class_name$ {&#10;    lateinit var xmlRoot: View&#10;    &#10;    fun setup(dependency: ViewDependency): View {&#10;        val view = LayoutInflater.from(dependency.context).inflate($layout_ref$, null, false)&#10;        return setup(view)&#10;    }&#10;    &#10;    fun setup(view: View): View {&#10;        xmlRoot = view&#10;        return xmlRoot&#10;    }&#10;}" description="View class that maps to xml file." toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout_ref" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
