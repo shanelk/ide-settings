@@ -2,4 +2,7 @@
   <component name="GeneralSettings">
     <option name="confirmExit" value="false" />
   </component>
+  <component name="Registry">
+    <entry key="dart.projects.without.pubspec" value="true" />
+  </component>
 </application>
