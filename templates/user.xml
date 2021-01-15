@@ -141,4 +141,11 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="appdep" value="private var $varName$: $VarClass$? = null&#10;&#10;fun get$VarClass$(): $VarClass$ {&#10;    if ($varName$ == null) {&#10;        // TODO initialize here&#10;    }&#10;    return $varName$!!&#10;}" description="Create application dependency (This would go in the application class)" toReformat="false" toShortenFQNames="true">
+    <variable name="varName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VarClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
