@@ -148,4 +148,16 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="espOnView" value="Espresso.onView(ViewMatchers.withId(R.id.$viewId$))" description="Get View With Espresso" toReformat="false" toShortenFQNames="true">
+    <variable name="viewId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="espViewAction" value=".perform(&#10;    ViewActions.&#10;)" description="Perform view aciton on view" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
