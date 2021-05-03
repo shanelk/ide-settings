@@ -1,9 +1,0 @@
-<application>
-  <component name="ConsoleFoldingSettings">
-    <option name="addedPositive">
-      <list>
-        <option value="2020-03-20 13:27:40.058 17240-17715/com.campchef.iotgrill D/GrillBleConnection$bleResponseObservable: BLE RESPONSE {&quot;state&quot; : {&quot;timer&quot;:{&quot;startup&quot;:0,&quot;feed&quot;:0,&quot;shutdown&quot;:0,&quot;run_timer&quot;:0}}}" />
-      </list>
-    </option>
-  </component>
-</application>
