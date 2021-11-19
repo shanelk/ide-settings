@@ -1484,6 +1484,11 @@
                       <FeaturePluginData displayName="Gauge Execution" pluginName="Gauge" pluginId="com.thoughtworks.gauge" />
                     </value>
                   </entry>
+                  <entry key="org.spekframework.spek2-jvm">
+                    <value>
+                      <FeaturePluginData displayName="Spek 2 - JVM" pluginName="Spek Framework" pluginId="org.spekframework" />
+                    </value>
+                  </entry>
                 </map>
               </option>
             </FeaturePluginsList>
