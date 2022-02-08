@@ -19,10 +19,10 @@
             <value value="9AGAY1DMBW" />
           </Key>
         </key>
-        <lastOnlineTime value="2022-02-08T17:50:45.709104Z" />
+        <lastOnlineTime value="2022-02-08T21:23:06.697979Z" />
         <name value="Google Pixel 3a" />
-        <target value="Android 12.0" />
-        <api value="31" />
+        <target value="Android 1.0" />
+        <api value="1" />
       </PhysicalDevice>
     </physicalDevices>
   </component>
