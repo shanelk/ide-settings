@@ -4,10 +4,11 @@
       <PhysicalDevice>
         <key>
           <Key>
-            <type value="DOMAIN_NAME" />
-            <value value="adb-9AGAY1DMBW-pcVIzV._adb-tls-connect._tcp." />
+            <type value="SERIAL_NUMBER" />
+            <value value="9AGAY1DMBW" />
           </Key>
         </key>
+        <lastOnlineTime value="2022-02-11T20:42:10.055783Z" />
         <name value="Google Pixel 3a" />
         <target value="Android 12.0" />
         <api value="31" />
@@ -15,14 +16,13 @@
       <PhysicalDevice>
         <key>
           <Key>
-            <type value="SERIAL_NUMBER" />
-            <value value="9AGAY1DMBW" />
+            <type value="DOMAIN_NAME" />
+            <value value="adb-9AGAY1DMBW-pcVIzV._adb-tls-connect._tcp." />
           </Key>
         </key>
-        <lastOnlineTime value="2022-02-08T21:23:06.697979Z" />
         <name value="Google Pixel 3a" />
-        <target value="Android 1.0" />
-        <api value="1" />
+        <target value="Android 12.0" />
+        <api value="31" />
       </PhysicalDevice>
     </physicalDevices>
   </component>
