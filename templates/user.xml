@@ -160,7 +160,8 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="vb" value="lateinit var vb: $bindingClass$" description="AndroidViewBinding" toReformat="false" toShortenFQNames="true">
+  <template name="vb" value="lateinit var $name$: $bindingClass$" description="AndroidViewBinding" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="bindingClass" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
