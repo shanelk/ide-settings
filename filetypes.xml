@@ -4,11 +4,11 @@
       <mapping pattern="countryCodeHtml" type="HTML" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <mapping pattern="test.json" type="PLAIN_TEXT" />
-      <mapping pattern="WORKSPACE" type="PLAIN_TEXT" />
-      <mapping pattern="title" type="PLAIN_TEXT" />
       <mapping pattern="meFile" type="PLAIN_TEXT" />
+      <mapping pattern="title" type="PLAIN_TEXT" />
+      <mapping pattern="WORKSPACE" type="PLAIN_TEXT" />
       <mapping pattern="gramps" type="PLAIN_TEXT" />
+      <mapping pattern="test.json" type="PLAIN_TEXT" />
       <mapping pattern="base_sixtyfour" type="PLAIN_TEXT" />
       <mapping ext="mtl" type="PLAIN_TEXT" />
       <mapping ext="obj" type="PLAIN_TEXT" />
