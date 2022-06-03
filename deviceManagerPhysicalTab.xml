@@ -19,7 +19,6 @@
             <value value="adb-9AGAY1DMBW-pcVIzV._adb-tls-connect._tcp." />
           </Key>
         </key>
-        <lastOnlineTime value="2022-03-24T20:51:43.276893Z" />
         <name value="Google Pixel 3a" />
         <target value="Android 12.0" />
         <api value="31" />
@@ -34,6 +33,17 @@
         <name value="samsung SAMSUNG-SM-G920A" />
         <target value="Android 7.0" />
         <api value="24" />
+      </PhysicalDevice>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="04JAY1W5CD" />
+          </Key>
+        </key>
+        <name value="Google Pixel 3a" />
+        <target value="Android API 32" />
+        <api value="32" />
       </PhysicalDevice>
     </physicalDevices>
   </component>
