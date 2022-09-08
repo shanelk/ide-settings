@@ -12,6 +12,17 @@
         <target value="Android API 32" />
         <api value="32" />
       </PhysicalDevice>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="1215fccd6ca73305" />
+          </Key>
+        </key>
+        <name value="samsung SAMSUNG-SM-G920A" />
+        <target value="Android 7.0" />
+        <api value="24" />
+      </PhysicalDevice>
     </physicalDevices>
   </component>
 </application>
