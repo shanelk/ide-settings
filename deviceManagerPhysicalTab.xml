@@ -23,6 +23,17 @@
         <target value="Android 7.0" />
         <api value="24" />
       </PhysicalDevice>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="27071JEGR23963" />
+          </Key>
+        </key>
+        <name value="Google Pixel 6a" />
+        <target value="Android API 33" />
+        <api value="33" />
+      </PhysicalDevice>
     </physicalDevices>
   </component>
 </application>
