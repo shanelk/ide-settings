@@ -5,6 +5,17 @@
         <key>
           <Key>
             <type value="DOMAIN_NAME" />
+            <value value="adb-27071JEGR23963-ciZ8dp._adb-tls-connect._tcp." />
+          </Key>
+        </key>
+        <name value="Google Pixel 6a" />
+        <target value="Android API 33" />
+        <api value="33" />
+      </PhysicalDevice>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="DOMAIN_NAME" />
             <value value="adb-9AGAY1DMBW-pcVIzV._adb-tls-connect._tcp." />
           </Key>
         </key>
